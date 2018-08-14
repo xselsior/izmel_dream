@@ -1,0 +1,17 @@
+/* CSS Document */
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Yeseva+One&subset=cyrillic');
+h1, h2, h3, h4, h5, h6 {
+	color: aqua;
+	font-family: 'Yeseva One';
+}
+#header {
+	background-image: url(../images/bgmain.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+	background-position: top center;
+	background-size: cover;
+
+  h2 {padding: auto 4rem};
+	}
