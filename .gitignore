@@ -7,3 +7,10 @@ _notes/
 /js/popper.min.js
 /js/bootstrap-4.0.0.js
 /js/jquery-3.2.1.min.js
+/.sass-cach/
+/css/print.scss
+/css/ie.scss
+/dist/images/
+/images/
+/.sass-cache/
+/webfonts/

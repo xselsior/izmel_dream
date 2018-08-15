@@ -5,6 +5,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: aqua;
 	font-family: 'Yeseva One';
 }
+@mixin display-flex($display: flex) {
+  		display: flex;
+}
+@mixin flex-direction($direction: column) {
+  		flex-direction: column;
+}
 #header {
 	background-image: url(../images/bgmain.jpg);
 	background-repeat: no-repeat;
@@ -12,6 +18,15 @@ h1, h2, h3, h4, h5, h6 {
 	height: auto;
 	background-position: top center;
 	background-size: cover;
+	padding-bottom: 42rem;
+	@include flexbox((display: flex, flex-direction: column))
+	
+}
 
-  h2 {padding: auto 4rem};
-	}
+  
+.herotext {
+	display: block;
+}
+	h2, h3 {
+	color: #FFEB3B;
+}
