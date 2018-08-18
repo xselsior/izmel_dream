@@ -1,9 +1,15 @@
 /* CSS Document */
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Yeseva+One&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ultra|Merriweather|Yeseva+One&subset=cyrillic");
 /* CSS Document */
-h1, h2, h3, h4, h5, h6 { color: aqua; font-family: 'Yeseva One'; }
+h1, h2, h3, h4, h5, h6 { color: brown; font-family: 'Yeseva One'; }
+
+p { font-family: 'Merriweather', serif; }
 
 #header { background-image: url(../images/bgmain.jpg); background-repeat: no-repeat; width: 100%; height: 56.25rem; background-position: top center; background-size: 100%; padding-bottom: 9.8rem; display: -webkit-flex; -webkit-flex-direction: column; display: flex; flex-direction: column; }
 
-.herotext { display: block; position: absolute; top: 35%; left: 50%; transform: translate(-51%, -50%); background-color: #11631c80; border-radius: 15px; margin-left: 10px; right: 10px; width: fit-content; }
+.herotext { /*display: block;*/ position: absolute; top: 35%; left: 50%; transform: translate(-51%, -50%); background-color: #11631c80; border-radius: 15px; line-height: 1rem; margin-left: 10px; right: 10px; width: fit-content; }
 .herotext h2, .herotext h3 { color: #FFEB3B; font-size: 4vw; text-shadow: #ff5722 1px 1px 0, #ff5722 2px 2px 2px, #9a2d0b 3px 3px 3px, #9a2d0b 4px 4px 4px; }
+
+.tlinf { /*display: flex;*/ box-sizing: content-box; align-self: flex-end; }
+
+.tlinf p { font-size: 2rem; font-family: 'Ultra', serif; }
