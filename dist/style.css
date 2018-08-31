@@ -1,53 +1,78 @@
-/*
-Error: Invalid CSS after "...s($align-items)": expected "{", was "#header {"
-        on line 22 of D:/www sites/novizm/sass/style.scss
+@charset "UTF-8";
+/* CSS Document */
+/* CSS Document */
+/* CSS Document */
+/*spiner*/
+@import url("https://fonts.googleapis.com/css?family=PT Serif|Ultra|Yeseva+One&subset=cyrillic");
+@-moz-keyframes spiner { from { -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); }
+  to { -moz-transform: rotateY(-360deg); -ms-transform: rotateY(-360deg); transform: rotateY(-360deg); } }
+@-webkit-keyframes spiner { from { -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); }
+  to { -moz-transform: rotateY(-360deg); -ms-transform: rotateY(-360deg); transform: rotateY(-360deg); } }
+@keyframes spiner { from { -moz-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); }
+  to { -moz-transform: rotateY(-360deg); -ms-transform: rotateY(-360deg); transform: rotateY(-360deg); } }
+.spiner1 { animation-delay: 0.2s; }
 
-17: }
-18: @mixin justify-content($justify-content: space-between){
-19: 	justify-content: space-between;
-20: }
-21: @mixin align-items($align-items)
-22: #header {
-23: 	background-image: url(../images/bgmain.jpg);
-24: 	background-repeat: no-repeat;
-25: 	width: 100%;
-26: 	height: auto;
-27: 	background-position: top center;
+.spiner2 { animation-delay: 0.4s; }
 
-Backtrace:
-D:/www sites/novizm/sass/style.scss:22
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:234:in `mixin_directive'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:222:in `special_directive'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:197:in `directive'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/lib/ruby/gems/2.4.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/compass:23:in `load'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2018/ruby/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...s($align-items)\": expected \"{\", was \"#header {\"\A         on line 22 of D:/www sites/novizm/sass/style.scss\A \A 17: }\A 18: @mixin justify-content($justify-content: space-between){\A 19: 	justify-content: space-between;\A 20: }\A 21: @mixin align-items($align-items)\A 22: #header {\A 23: 	background-image: url(../images/bgmain.jpg);\A 24: 	background-repeat: no-repeat;\A 25: 	width: 100%;\A 26: 	height: auto;\A 27: 	background-position: top center;"; }
+.spiner3 { animation-delay: 0.6s; }
+
+.spiner4 { animation-delay: 0.8s; }
+
+.spiner5 { animation-delay: 1s; }
+
+/*╨Ъ╨Ю╨Э╨Х╨ж SPINER*/
+/*SLIDE IN LEFT*/
+.slideleft { animation-name: slideleft; animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1); animation-iteration-count: infinite; animation-duration: 3s; animation-delay: 0.5s; animation-fill-mode: both; animation-direction: alternate; }
+
+@-webkit-keyframes slideleft { 0% { -webkit-transform: translateX(0); transform: translateX(0); }
+  100% { -webkit-transform: translateX(-200px); transform: translateX(-200px); } }
+@keyframes slideleft { 0% { -webkit-transform: translateX(0); transform: translateX(0); }
+  100% { -webkit-transform: translateX(-200px); transform: translateX(-200px); } }
+/*╨Ъ╨Ю╨Э╨Х╨ж SLIDE IN LEFT*/
+body { background: url("../images/preim_bg.svg") no-repeat center center; background-attachment: fixed; background-size: cover; }
+
+h1, h2, h3, h4, h5, h6 { color: #ae7706; font-family: 'Yeseva One'; }
+
+h2 { font-size: 3rem; }
+
+p { font-family: 'PT Serif', sans-serif; font-size: 1.1rem; text-indent: 0.6rem; }
+
+/*.container {
+	margin-top: 2rem;
+}*/
+.bgbloki, #uslugi { background-color: #ffef6c80; box-shadow: 7px 7px 5px #FF9800; width: 100%; -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; }
+
+#header { background-image: url(../images/bgmain.jpg); background-repeat: no-repeat; padding-bottom: 1.6rem; width: 100%; height: 100%; background-position: top center; background-size: contain; display: flex; flex-direction: column; justify-content: space-between; align-items: center; }
+
+.herotext { background-color: #11631c80; border-radius: 15px; line-height: 1rem; margin-left: 10px; margin-right: 10px; margin-top: 15%; margin-bottom: 15%; }
+.herotext h2 { color: #ff6919; font-size: 5vw; padding-top: 2%; text-shadow: #995313 1px 1px 0, #995313 2px 2px 2px, #995313 3px 3px 3px, #9a2d0b 4px 4px 4px; }
+.herotext h3 { color: #FFEB3B; font-size: 3vw; padding-top: 2%; text-shadow: #ff5722 1px 1px 0, #ff5722 2px 2px 2px, #9a2d0b 3px 3px 3px, #9a2d0b 4px 4px 4px; }
+
+.tlinf { margin-top: 8%; margin-bottom: 9%; }
+.tlinf h4 { color: #9e0606; font-size: 5vw; font-family: 'Ultra', serif; text-indent: initial; text-shadow: 1px -1px 0 #dd901c, 2px -2px 0 #dd901c, 3px -3px 0 #dd901c, 4px -3px 0 #ea9920, 5px -3px 6px rgba(255, 187, 0, 0.91); }
+
+.main { width: 100%; height: auto; }
+
+.divider { width: 100%; height: auto; min-height: 2rem; background-image: url(../images/divider.svg); background-repeat: no-repeat; }
+
+.preim { background-image: url(../images/trianglify_green.svg); padding-top: 1rem; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin-top: 2rem; border: 4px solid #f44336; border: 4px solid #ffff9dff; box-shadow: 4px 4px 15px #F44336, -4px -4px 15px #F44336 inset; }
+.preim figure { margin: 0; }
+.preim figcaption { padding-top: 0.8rem; }
+.preim h3 { color: #ae7706; font-size: larger; word-wrap: break-word; }
+.preim p { color: #322222; font-size: large; line-height: 1.2rem; }
+.preim img { background-color: #ffd881; border-radius: 25px; padding: 9px; border: solid 2px #FF472F; width: 64px; height: 64px; animation-name: spiner; animation-timing-function: ease; animation-iteration-count: infinite; animation-duration: 6s; }
+
+.hdecor { border-bottom: 4px solid #FFC107; border-top: 4px solid #FFC107; }
+
+#uslugi p { margin-top: auto; margin-bottom: auto; }
+#uslugi .bg-success { color: #bd7813; background-color: #cddc3999 !important; padding: 5px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; }
+
+/*zkaz*/
+.zakazone { -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; cursor: pointer; border: none; font: normal 3rem/normal Arial Black, Gadget, sans-serif; text-align: center; -o-text-overflow: clip; text-overflow: clip; text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.09804), 0 0 5px rgba(0, 0, 0, 0.09804), 0 1px 3px rgba(0, 0, 0, 0.29804), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.24706), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902); -webkit-transition: font-size 300ms cubic-bezier(0.42, 0, 0.58, 1); -moz-transition: font-size 300ms cubic-bezier(0.42, 0, 0.58, 1); -o-transition: font-size 300ms cubic-bezier(0.42, 0, 0.58, 1); transition: font-size 300ms cubic-bezier(0.42, 0, 0.58, 1); }
+
+.zakazone:hover { color: #ff6138; text-shadow: 0 1px 0 white, 0 2px 0 white, 0 3px 0 white, 0 4px 0 white, 0 5px 0 white, 0 6px 1px rgba(0, 0, 0, 0.09804), 0 0 5px rgba(0, 0, 0, 0.09804), 0 1px 3px rgba(0, 0, 0, 0.29804), 0 3px 5px rgba(0, 0, 0, 0.2), 0 -5px 10px rgba(0, 0, 0, 0.24706), 0 -7px 10px rgba(0, 0, 0, 0.2), 0 -15px 20px rgba(0, 0, 0, 0.14902); -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms; }
+
+.zakazone:active { color: #41bf41; text-shadow: 0 1px 0 #f2af29, 0 2px 0 #e0732a, 0 3px 0 #b55b17, 0 4px 0 #8c5015, 0 5px 0 #a03e18; -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1); -webkit-transform-origin: 40% 50% 0; transform-origin: 40% 50% 0; }
+
+/*END ZAKAZ*/
+#trash { width: 300px; height: 300px; display: block; }

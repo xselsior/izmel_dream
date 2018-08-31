@@ -1,7 +1,28 @@
 /* CSS Document */
-@media only screen and (min-width: 220px) and (max-width: 430px){
+@media only screen and (min-width: 220px) and (max-width: 470px){
+	#header {
+		padding-bottom: 5px;
+	}
 	.herotext {
-	    top: 21%;
-		transform: translate(-54%, -50%);
+		margin-bottom: 11px;
+	}
+	h2.preimt {
+		font-size: 1.4rem;
+	}
+	.tlinf {
+		margin-top: 4%;
+    	margin-bottom: 14%
+	}
+}
+@media only screen and (min-width: 471px) and (max-width: 758px) {
+	#header {
+		padding-bottom: 32px;
+	}
+	.herotext {
+		margin-bottom: 7%;
+	}
+	.telinf {
+	    margin-top: 10%;
+    	margin-bottom: 12%;
 	}
 }
