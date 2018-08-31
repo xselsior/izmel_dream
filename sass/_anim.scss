@@ -1,0 +1,100 @@
+/* CSS Document */
+@mixin debug-support-matrix($experimental: true, $ie: true) {
+    @debug '#{"$moz-"}$experimental-support-for-mozilla'
+                 '#{"$webkit-"}$experimental-support-for-webkit'
+                 '#{"$opera-"}$experimental-support-for-opera'
+                 '#{"$microsoft-"}$experimental-support-for-microsoft'
+                 '#{"$khtml-"}$experimental-support-for-khtml';
+    @debug '#{"$ie6-"}$legacy-support-for-ie6'
+                 '#{"$ie7-"}$legacy-support-for-ie7'
+                 '#{"$ie8-"}$legacy-support-for-ie8';
+}
+@mixin keyframes($name, $deprecated-prefixes...) {
+  $warned: warn-about-useless-prefix-arguments($deprecated-prefixes...);
+  @include with-each-prefix(css-animation, $animation-support-threshold) {
+    // It would be nice if we could dynamically construct directive names.
+    @if $current-prefix == -moz {
+      @-moz-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -webkit {
+      @-webkit-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -o {
+      @-o-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == -ms {
+      @-ms-keyframes #{$name} {
+        @content;
+      }
+    }
+    @if $current-prefix == null {
+      @keyframes #{$name} {
+        @content;
+      }
+    }
+  }
+}
+
+/*spiner*/
+@mixin animation($name,$duration,$function,$count){
+	animation-name: $name;  
+    animation-timing-function: $function; 
+    animation-iteration-count: $count; 
+    animation-duration: $duration; 
+}
+
+@include keyframes (spiner) {
+	from { 
+        -moz-transform: rotateY(0deg); 
+        -ms-transform: rotateY(0deg); 
+        transform: rotateY(0deg); 
+    } 
+    to { 
+        -moz-transform: rotateY(-360deg); 
+        -ms-transform: rotateY(-360deg); 
+        transform: rotateY(-360deg);
+    } 
+	}
+//.spiner {
+//@include animation(spiner, 6s, ease, infinite);
+//	}
+@for $i from 1 through 5 {	
+  .spiner#{$i} { animation-delay: 0.2s * $i; }
+}
+/*КОНЕЦ SPINER*/
+/*SLIDE IN LEFT*/
+.slideleft {
+	@include animation(slideleft, 3s, cubic-bezier(0.230, 1.000, 0.320, 1.000),infinite);
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+}
+
+@-webkit-keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+@keyframes slideleft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+}
+
+/*КОНЕЦ SLIDE IN LEFT*/
