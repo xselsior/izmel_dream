@@ -1,8 +1,17 @@
 /* CSS Document */
-@media only screen and (min-width: 220px) and (max-width: 470px) { #header { padding-bottom: 5px; }
+@media only screen and (min-width: 220px) and (max-width: 470px) { h2.hdecor { font-size: 2.4rem; }
+  #header { padding-bottom: 5px; }
   .herotext { margin-bottom: 11px; }
   h2.preimt { font-size: 1.4rem; }
-  .tlinf { margin-top: 4%; margin-bottom: 14%; } }
+  .tlinf { margin-top: 4%; margin-bottom: 14%; }
+  @keyframes slideleft { 0% { transform: translateX(0); }
+    100% { transform: translateX(180px); } }
+  .mulch { background-image: url(../images/bgmulch-small.png); background-position: center; background-size: cover; max-width: 98%; margin-left: 5px; }
+  img.vseusl { padding-top: 1rem; } }
 @media only screen and (min-width: 471px) and (max-width: 758px) { #header { padding-bottom: 32px; }
   .herotext { margin-bottom: 7%; }
-  .telinf { margin-top: 10%; margin-bottom: 12%; } }
+  .telinf { margin-top: 10%; margin-bottom: 12%; }
+  @keyframes slideleft { 0% { transform: translateX(0); }
+    100% { transform: translateX(250px); } } }
+@media only screen and (max-width: 970px) { p.multext { left: 0%; font-size: 1.5rem; }
+  p.multext a { font-size: 1.3rem; } }

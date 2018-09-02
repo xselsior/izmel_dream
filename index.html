@@ -9,14 +9,7 @@
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 	<link rel="stylesheet" href="dist/style.css">
 	<link href="dist/mediaquery.css" rel="stylesheet" type="text/css">
-	<style type="text/css">
-	a:link {
-	color: #30DE67;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-family: "Yeseva One";
-}
-    </style>
+	<script src="js/picturefill.min.js"></script>
   </head>
   <body>
 	  <header id="header" class="container-fluid" role="heading">
@@ -50,11 +43,11 @@ h1,h2,h3,h4,h5,h6 {
     </nav>
 		  <!--<div class="clearfix"></div>-->
 		  <div class="herotext text-center">	
-		  <h2>Аренда измельчителя веток</h2><h3>Дробилка дерева на собственном ходу - выгодные условиях.</h3></div>
+		  <h2>Аренда измельчителя веток</h2><h3>Дробилка дерева на собственном ходу.</h3></div>
 		  <div class="tlinf"><h4>8911 008 0170</h4></div>
 	  </header>
 <!--	  <div class="divider"></div>-->
-	  <main class="main"><div class="container text-center my-5"><h2 class="my-5 hdecor">Преиммущества аренды дробилки дерева у нас.</h2><div class="row preim">
+	  <main class="main"><div class="container text-center my-5"><header><h2 class="my-5 hdecor">Преиммущества аренды дробилки дерева у нас.</h2></header><div class="row preim">
 	  	<figure class="col-6 col-sm-4 col-md-3">
   <img src="images/icons/icon2_samohod3.svg" alt="Дробилка на собственном ходу" style="allign: center">
 			<figcaption><h3>Дробилка на собственном ходу.</h3><p>Подъедет к <strong>месту измельчения</strong>,что увеличит скорость работы.</p></figcaption></figure>
@@ -75,18 +68,62 @@ h1,h2,h3,h4,h5,h6 {
               <figcaption><h3>Любая форма оплаты.</h3><p>Принимаем наличные и безнал.расчет.</p></figcaption>
   </figure>
 	  </div></div>
-		  <div class="container my-5">
-			  <h2 class="text-center hdecor my-5">Услуга <strong>аренды измельчителя веток и деревьв</strong>.</h2>
-		  	<div id="uslugi" class="row py-4">
+		  <article class="container my-5">
+			  <header><h2 class="text-center hdecor my-5">Услуга <strong>аренды измельчителя веток и деревьв</strong>.</h2></header>
+		  	<div id="uslugi" class="mx-auto row py-4">
 			  <div class="col-12 col-sm-4"><img src="images/heder_left.png" alt="услуга аренда дробилки дерева" style="width: 100%; height:auto;"></div>
 			  <div class="col-12 col-sm-8"><p>Предлагаем услугу по <strong>аренде дробилки деревьев</strong> в СПб и Лен. Области. Предоставляемый нами мульчер GS 280 – это дробилка дерева на собственном ходу, которая сэкономит Ваши средства на рабочей силе.<br> Для этой модели измельчителя деревьев достаточно 1-2 человека, против предложений для других установок, где требуется 3-5 и больше человек. К тому же время работы грузчиков сокращается за счет того, что им не надо преодолевать лишнее расстояние. Так-как <strong>дробилка дерева</strong> на собственном ходу, а значит подъедет к месту работы.</p><br><p class="bg-success">Вся техника в идеальном техническом состоянии (начало эксплуатации август 2018г.). Это гарантирует, что в середине работы дробилка не сломается, а Ваши расходы не будут увеличены.</p></div>
 <!--				<div class="clearfix"></div>-->
 				<div class="m-auto"><a href="#contact-form" class="zakazone">ЗАКАЗАТЬ</a></div>
 		    </div>
-			  <div class="row my-4 bgbloki">
-			  	<div class="col-6"><p> Наша компания предоставляет весь спектр услуг по работе с древостоем, от спила до измельчения деревьев. Вам не придется искать одну компанию для спила, другую для измельчения, а третью для вывоза. Все заботы по валке деревьев, измельчению и вывозу мы возьмем на себя. Специалисты имеют не только широкие знания получение в учебном заведении (Лесотехническая академия), но и большой опыт накопленный с 2007г. Вы можете быть уверены, что получите качественную услугу.  Работаем в Санкт-Петербурге, Лен.области и регионах. Принимаем оплату в любой форме. Обратившись к нам, Вы получите быстрое выполнение всех работ с древостоем, на высоком профессиональном уровне.</p></div>
-			  	<div class="col-6"><img style="width: 100%; height: auto;" src="images/uslugiban.png" alt="спил деревьев,измельчение деревьев,вывоз."></div></div>
-			  </div>
+		    <div class="mx-auto row my-4 bgbloki">
+			  	<section class="col-12 col-md-7 py-4 order-12 order-md-1"><p> Наша компания предоставляет весь спектр услуг по работе с древостоем, от спила до измельчения деревьев. Вам не придется искать одну компанию для спила, другую для измельчения, а третью для вывоза. Все заботы по валке деревьев, измельчению и вывозу мы возьмем на себя. Специалисты имеют не только широкие знания получение в учебном заведении (Лесотехническая академия), но и большой опыт накопленный с 2007г. Вы можете быть уверены, что получите качественную услугу.  Работаем в Санкт-Петербурге, Лен.области и регионах. Принимаем оплату в любой форме. Обратившись к нам, Вы получите быстрое выполнение всех работ с древостоем, на высоком профессиональном уровне.</p></section>
+			  	<div class="col-12 col-md-5 order-1 order-md-12"><img class="vseusl" src="images/uslugiban.png" alt="спил деревьев,измельчение деревьев,вывоз."></div>
+		      <div class="mulch col-12 order-last"><div class="multext"><a href="#">Арендуйте дробилку прямо сейчас</a><br><p>полуите скидку на вывоз</p><img class="slideleft mx-auto" src="images/Mulcher_transparentbg.png" alt="дробилка дерева услуга" width="129" height="auto"/></div> </div></div>
+			  </article>
+		  	<div class="container"><div class="row mx-auto">
+		  		<div class="col-12 col-md-4 imegcard">
+					<picture> 
+  <!-- Default low resolution image -->
+  <source srcset="images/drobila1_small.jpg" type="image/jpg" media="(max-width: 560px)">
+  
+  <!-- Medium resolution image -->
+  <source srcset="images/drobila1.jpg" media="(min-width: 561px)">
+  
+  <!--High resolution Image -->
+  <source srcset="images/drobila1_large.jpg" media="(min-width: 1200px)">
+  
+  <!-- Fallback image incase the picture element is not supported --> 
+  <img src="images/drobila1.jpg" alt="дробилка дерева в лесу" style="width:100%; height: auto;"> 
+</picture></div>
+		  		<div class="col-12 col-md-4 imegcard"><picture> 
+  <!-- Default low resolution image -->
+  <source srcset="images/drobila2_small.jpg" type="image/jpg" media="(max-width: 560px)">
+  
+  <!-- Medium resolution image -->
+  <source srcset="images/drobila2.jpg" media="(min-width: 561px)">
+  
+  <!--High resolution Image -->
+  <source srcset="images/drobila2_large.jpg" media="(min-width: 1200px)">
+  
+  <!-- Fallback image incase the picture element is not supported --> 
+  <img src="images/drobila2.jpg" alt="работа  дробилки дерева" style="width:100%; height: auto;"> 
+</picture></div>
+		  		<div class="col-12 col-md-4 imegcard"><picture> 
+  <!-- Default low resolution image -->
+  <source srcset="images/drobilka3small.jpg" type="image/jpg" media="(max-width: 560px)">
+  
+  <!-- Medium resolution image -->
+  <source srcset="images/drobilka3.jpg" media="(min-width: 561px)">
+  
+  <!--High resolution Image -->
+  <source srcset="images/drobilka3large.jpg" media="(min-width: 1200px)">
+  
+  <!-- Fallback image incase the picture element is not supported --> 
+  <img src="images/drobilka3.jpg" alt="дробилка сама подьедет к спилу деревьев" style="width:100%; height: auto;"> 
+</picture></div>
+		  	</div></div>
+		 
 	  </main>
   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 

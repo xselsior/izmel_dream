@@ -51,50 +51,35 @@
 
 @include keyframes (spiner) {
 	from { 
-        -moz-transform: rotateY(0deg); 
-        -ms-transform: rotateY(0deg); 
         transform: rotateY(0deg); 
     } 
     to { 
-        -moz-transform: rotateY(-360deg); 
-        -ms-transform: rotateY(-360deg); 
         transform: rotateY(-360deg);
     } 
 	}
-//.spiner {
-//@include animation(spiner, 6s, ease, infinite);
-//	}
 @for $i from 1 through 5 {	
   .spiner#{$i} { animation-delay: 0.2s * $i; }
 }
 /*КОНЕЦ SPINER*/
 /*SLIDE IN LEFT*/
 .slideleft {
-	@include animation(slideleft, 3s, cubic-bezier(0.230, 1.000, 0.320, 1.000),infinite);
+	@include animation(slideleft, 3s, linear,infinite);
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	animation-direction: alternate;
 }
 
-@-webkit-keyframes slideleft {
+
+@include keyframes (slideleft) {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    transform: translateX(600px);
+    transform: translateX(600px);
   }
 }
-@keyframes slideleft {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
-  }
-}
+
 
 /*КОНЕЦ SLIDE IN LEFT*/
